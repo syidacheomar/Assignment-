@@ -38,7 +38,8 @@ class Library {
             if (book.getTitle().equalsIgnoreCase(title) && book.getIsAvailable()) {
                 book.setIsAvailable(false);
                 user.borrowBook(title, LocalDate.now().plusDays(14));
-                System.out.println(user.getName() + " borrowed: " + title);
+                System.out.println(("User:" + " " + user.getName() + "," + " " + "Borrowed: " + title));
+                System.out.println();
                 return;
             }
         }

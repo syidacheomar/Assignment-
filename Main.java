@@ -23,17 +23,21 @@ public class Main {
         // Listing available books
         library.listAvailableBooks();
 
+        System.out.println("--- Borrowing a book ---");
+
         // Borrowing books
         library.borrowBook(user1, "Harry Potter");
         library.borrowBook(user2, "Lord of the Rings");
+
+        System.out.println("---Overdue Books---");
 
         // Check due dates
         user1.checkDueDates();
         user2.checkDueDates();
 
         // Check overdue books after simulating time passing (e.g., using LocalDate.now().minusDays(15))
-        user1.checkOverdueBooks();
-        user2.checkOverdueBooks();
+        //user1.checkOverdueBooks();
+        //user2.checkOverdueBooks();
 
 
 

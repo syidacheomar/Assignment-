@@ -58,8 +58,15 @@ class User{
     }
 
     public void checkDueDates(){
-        System.out.println("Book:" + " " + borrowedBooks);
-        System.out.println("Due Date: " + " " + borrowedBooksDueDates);
+        System.out.print("User:" + " " + getName() + "," + " ");
+
+        for(String borrowedBook : borrowedBooks) {
+            LocalDate dueDate = borrowedBooksDueDates.get(borrowedBook);
+            System.out.print("Book:" + " " + borrowedBook + "," + " ");
+            System.out.print("Due Date: " + " " + dueDate);
+            System.out.println();
+        }
+        
     }
 
     public void checkOverdueBooks(){
@@ -72,6 +79,6 @@ class User{
             }
         });
     }
-
 }
+
 

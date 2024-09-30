@@ -45,10 +45,7 @@ class Book {
 
 
     public void printBookInfo(){
-        System.out.println("Title:" + " " + getTitle());
-        System.out.println("Author:" + " " + getAuthor());
-        System.out.println("ISBN:" + " " + getIsbn());
-        System.out.println("Available:" + " " + getIsAvailable());
+        System.out.println("Title:" + " " + getTitle() + "," + " " + "Author:" + " " + getAuthor() + "," + " " + "ISBN:" + " " + getIsbn() + "," + " " + "Available:" + " " + getIsAvailable());
         System.out.println();
     }    
 }
