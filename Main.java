@@ -29,15 +29,18 @@ public class Main {
         library.borrowBook(user1, "Harry Potter");
         library.borrowBook(user2, "Lord of the Rings");
 
-        System.out.println("---Overdue Books---");
+        System.out.println("---Due dates---");
 
         // Check due dates
         user1.checkDueDates();
         user2.checkDueDates();
 
-        // Check overdue books after simulating time passing (e.g., using LocalDate.now().minusDays(15))
-        //user1.checkOverdueBooks();
-        //user2.checkOverdueBooks();
+        System.out.println();
+        System.out.println("---Overdue Books---");
+
+        // Check overdue books 
+        user1.checkOverdueBooks();
+        user2.checkOverdueBooks();
 
 
 
